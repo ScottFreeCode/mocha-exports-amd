@@ -1,0 +1,42 @@
+{
+  "name": "mocha-exports-amd",
+  "version": "1.0.0",
+  "description": "AMD loader plugin to run Mocha tests with module exports interface in browser",
+  "main": "mochaExport.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "2.4.5",
+    "requirejs": "2.2.0",
+    "requirejs-domready": "2.0.3"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/scottfreecode/mocha-exports-amd.git"
+  },
+  "keywords": [
+    "Mocha",
+    "testing",
+    "AMD",
+    "plugin",
+    "loader-plugin",
+    "AMD-loader-plugin",
+    "AMD-plugin",
+    "module",
+    "exports",
+    "exports-interface",
+    "module-exports-interface"
+  ],
+  "author": "ScottFreeCode",
+  "license": "AFL-3.0",
+  "bugs": {
+    "url": "https://github.com/scottfreecode/mocha-exports-amd/issues"
+  },
+  "homepage": "https://github.com/scottfreecode/mocha-exports-amd#readme"
+}
