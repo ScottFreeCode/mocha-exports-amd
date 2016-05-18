@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog is inspired by [Keep A Changelog](http://keepachangelog.com/).
 
 ## [Unreleased][]
+### Fixed
+- Stop leaking globalMochaAvailable function in non-strict mode.
+
 ### Added
 - `[documentation]` this change log
 
