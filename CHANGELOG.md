@@ -6,6 +6,7 @@ This changelog is inspired by [Keep A Changelog](http://keepachangelog.com/).
 ## [Unreleased][]
 ### Fixed
 - Stop leaking globalMochaAvailable function in non-strict mode.
+- `[metadata]` Git ignore all .tmp files.
 
 ### Added
 - `[documentation]` this change log
