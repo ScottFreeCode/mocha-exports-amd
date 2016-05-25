@@ -25,8 +25,8 @@ require.config({
 })
 
 require(["mocha",
-         "mochaExport!inAMDStyle.test",
-         "mochaExport!inCommonJSStyle.test",
+         "mochaExport!withAMDStyle.test",
+         "mochaExport!withCommonJSStyle.test",
          "domReady!"],
         function(mocha) {
   if (!mocha) { mocha = self.mocha } // In case shim config were not set up.
