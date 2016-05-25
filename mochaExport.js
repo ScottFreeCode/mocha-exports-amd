@@ -11,10 +11,10 @@ define(typeof mocha !== "undefined"
   if (!mocha) { mocha = self.mocha }
   mocha.ui("exports")
   return {
-    load: function(name, req, onload, config) {
-      req([name], function(value) {
-        mocha.suite.emit("require", value)
-        onload(value)
+    load: function(name, parentRequire, onload, config) {
+      parentRequire([name], function(module) {
+        mocha.suite.emit("require", module)
+        onload(module)
       })
     }
   }
