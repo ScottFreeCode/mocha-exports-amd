@@ -6,6 +6,7 @@ This changelog is inspired by [Keep A Changelog](http://keepachangelog.com/).
 ## [Unreleased][]
 ### Fixed
 - Stop leaking globalMochaAvailable function in non-strict mode.
+- `[examples]` Check `define.amd` and not just existence of `define` (both example/test code and README).
 - `[metadata]` Git ignore all .tmp files.
 
 ### Added

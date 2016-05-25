@@ -1,4 +1,4 @@
-var define = typeof define === "function" ? define : function define(factory) { factory(require, exports, module) }
+var define = typeof define === "function" && define.amd ? define : function define(factory) { factory(require, exports, module) }
 
 define(function(require,exports,module) {"use strict"
 

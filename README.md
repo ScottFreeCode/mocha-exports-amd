@@ -31,13 +31,13 @@ You'll want to put a line of boilerplate before your test modules' `define` call
 ####AMD style
 
 ```js
-var define = typeof define === "function" ? define : function define(deps, factory) { module.exports = factory.apply(undefined, deps.map(require)) }
+var define = typeof define === "function" && define.amd ? define : function define(deps, factory) { module.exports = factory.apply(undefined, deps.map(require)) }
 ```
 
 ####simplified CommonJS wrapper style
 
 ```js
-var define = typeof define === "function" ? define : function define(factory) { factory(require, exports, module) }
+var define = typeof define === "function" && define.amd ? define : function define(factory) { factory(require, exports, module) }
 ```
 
 ###example
