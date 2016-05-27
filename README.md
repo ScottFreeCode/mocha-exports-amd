@@ -47,6 +47,7 @@ See [the example provided in the repository](example) for a more complete pictur
 ## ToDo
 - Lint/hint/style-fix
 - Consider making the example/test be omitted from npm use of this lib as a dependency.
+- Set up actual testing -- it would have to be a bit meta, use the plugin to load some tests and then somehow check that the tests were loaded and/or run.
 
 ## License
 
