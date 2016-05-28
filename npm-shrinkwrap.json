@@ -1,6 +1,6 @@
 {
   "name": "mocha-exports-amd",
-  "version": "1.0.1-in-progress.9",
+  "version": "1.0.1-in-progress.10",
   "dependencies": {
     "commander": {
       "version": "2.3.0",

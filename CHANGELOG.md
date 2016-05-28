@@ -10,6 +10,8 @@ This changelog is inspired by [Keep A Changelog](http://keepachangelog.com/).
 - `[metadata]` Git ignore all .tmp files.
 
 ### Added
+- `[metadata]` peer dependencies:
+  - Mocha
 - `[documentation]` this change log
 - `[metadata]` shrinkwrap for (dev) dependencies' dependencies
 
