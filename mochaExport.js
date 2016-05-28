@@ -9,7 +9,7 @@ define(typeof mocha !== "undefined"
       ? [] : ["mocha"],
     function(mocha) {"use strict"
   if (!mocha) { mocha = self.mocha }
-  mocha.ui("exports")
+  mocha.setup("exports")
   return {
     load: function(name, parentRequire, onload, config) {
       parentRequire([name], function(module) {

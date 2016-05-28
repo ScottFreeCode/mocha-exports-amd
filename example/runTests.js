@@ -30,6 +30,7 @@ require(["mocha",
          "domReady!"],
         function(mocha) {
   if (!mocha) { mocha = self.mocha } // In case shim config were not set up.
-  mocha.checkLeaks(true)
+  // other setup options for mocha here:
+  //mocha.checkLeaks(true)
   mocha.run()
 })
