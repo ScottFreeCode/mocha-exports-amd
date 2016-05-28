@@ -11,6 +11,7 @@ This changelog is inspired by [Keep A Changelog](http://keepachangelog.com/).
 
 ### Added
 - `[documentation]` this change log
+- `[metadata]` shrinkwrap for (dev) dependencies' dependencies
 
 ### Changed
 - `[metadata]` Updated dependencies:
