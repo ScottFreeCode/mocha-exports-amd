@@ -13,6 +13,8 @@ This changelog is inspired by [Keep A Changelog](http://keepachangelog.com/).
 - `[documentation]` this change log
 
 ### Changed
+- `[metadata]` Updated dependencies:
+  - Mocha
 - `[examples]` names of test files; because I discovered I'm in the habit of typing "in{tab}" to get index.htm[l]
 
 ## [1.0.0][] - 2016-05-14 [Initial]
