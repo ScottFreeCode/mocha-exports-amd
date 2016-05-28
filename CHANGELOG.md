@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog is inspired by [Keep A Changelog](http://keepachangelog.com/).
 
-## [Unreleased][]
+## [1.1.0][]
 ### Fixed
 - Stop leaking globalMochaAvailable function in non-strict mode.
 - `[examples]` Check `define.amd` and not just existence of `define` (both example/test code and README).
@@ -31,5 +31,6 @@ This changelog is inspired by [Keep A Changelog](http://keepachangelog.com/).
 - `[examples]` webpage to run tests
 - `[examples]` Mocha configuration to run tests from the commandline
 
-[Unreleased]: https://github.com/scottfreecode/mocha-exports-amd/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/scottfreecode/mocha-exports-amd/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/scottfreecode/mocha-exports-amd/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/scottfreecode/mocha-exports-amd/tree/v1.0.0
