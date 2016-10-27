@@ -9,7 +9,12 @@ This changelog is inspired by [Keep A Changelog](http://keepachangelog.com/).
 - `[examples]` Comment the assert browser shim.
 
 ### Changed
-- `[documentation]` Discuss full Node loaders.
+- `[documentation]` Discuss full Node loaders (e.g. AMDefine).
+- `[examples]` Test AMDefine.
+
+### Added
+- `[metadata]` dev dependencies:
+  - AMDefine
 
 ## [1.1.0][]
 ### Fixed

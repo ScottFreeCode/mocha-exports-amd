@@ -57,10 +57,9 @@ If you don't want to put the shims at the top of every test file, or if you need
 
 ### example
 
-See [the example provided in the repository](example) for a more complete picture. Note that you can run the same tests from the example using Mocha's CLI from the base of this repository ([the repository's mocha.opts file](test/mocha.opts) configures it to find the example's tests and use the exports interface).
+See [the example provided in the repository](example) for a more complete picture. Note that you can run the same tests from the example using Mocha's CLI from the base of this repository by calling `npm test` ([the repository's mocha.opts file](test/mocha.opts) configures it to use the exports interface and the npm test scripts specify the different types of example's tests).
 
 ## ToDo
-- Update example/test according to documentation updates.
 - Lint/hint/style-fix?
 - Consider making the example/test be omitted from npm use of this lib as a dependency.
 - Set up actual testing -- it would have to be a bit meta, use the plugin to load some tests and then somehow check that the tests were loaded and/or run.

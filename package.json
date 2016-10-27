@@ -1,6 +1,6 @@
 {
   "name": "mocha-exports-amd",
-  "version": "1.1.1-in-progress.6",
+  "version": "1.1.1-in-progress.7",
   "description": "AMD loader plugin to run Mocha tests with module exports interface in browser",
   "main": "mochaExport.js",
   "directories": {
@@ -11,12 +11,15 @@
     "mocha": ">=1.2.1"
   },
   "devDependencies": {
+    "amdefine": "1.0.0",
     "mocha": "2.5.3",
     "requirejs": "2.2.0",
     "requirejs-domready": "2.0.3"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "npm run test-regular && npm run test-amdefine-intercept",
+    "test-regular": "mocha example/*.test.js",
+    "test-amdefine-intercept": "mocha --require amdefine/intercept example/*.test.noShim.js"
   },
   "repository": {
     "type": "git",
