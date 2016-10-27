@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog is inspired by [Keep A Changelog](http://keepachangelog.com/).
 
+## [Unreleased][]
+### Fixed
+- `[examples]` Use posixy path separator in test.
+- `[examples]` Comment the assert browser shim.
+
 ## [1.1.0][]
 ### Fixed
 - Stop leaking globalMochaAvailable function in non-strict mode.
