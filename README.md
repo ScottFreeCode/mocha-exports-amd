@@ -57,7 +57,7 @@ If your tests need to work in Internet Explorer 8 or older, and you're using one
 
 #### outside the test files
 
-If you don't want to put the shims at the top of every test file, or if you need to support AMD modules in your actual code as well as the tests, you may need to `--require` an AMD loader such as `--require [amdefine/intercept](https://github.com/jrburke/amdefine/#amdefineintercept)`.
+If you don't want to put the shims at the top of every test file, or if you need to support AMD modules in your actual code as well as the tests, you may need to `--require` an AMD loader such as [`--require amdefine/intercept`](https://github.com/jrburke/amdefine/#amdefineintercept).
 
 ### example
 
