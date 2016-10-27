@@ -53,4 +53,4 @@ See [the example provided in the repository](example) for a more complete pictur
 
 Copyright ScottFreeCode 2016
 
-Licensed under the Academic Free License version 3.0
+[Licensed under the Academic Free License version 3.0](LICENSE.txt)
