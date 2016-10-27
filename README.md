@@ -26,25 +26,41 @@ The plugin will use Mocha through the global `mocha` object if it is already loa
 
 ### compatibility with Node.js
 
-You'll want to put a line of boilerplate before your test modules' `define` calls to conditionally create the `define` function for use in Node. Then you can run Mocha through the CLI using the "exports" interface as usual.
+Unless your code is only meant to be used in-browser and you're comfortable relying on browser testing only, you'll still need to keep the test files compatible with Mocha's regular exports interface so you can run it on the commandline. Fortunately, it's easier to get AMD modules working in Node than Node modules in the browser.
 
-#### AMD style
+#### Shimming `define`
+
+One way to handle this is to write the test files with a ["UMD"](https://github.com/umdjs/umd) wrapper, but a more lightweight alternative is to shim the `define` function:
+
+######  AMD style
 
 ```js
 var define = typeof define === "function" && define.amd ? define : function define(deps, factory) { module.exports = factory.apply(undefined, deps.map(require)) }
 ```
 
-#### simplified CommonJS wrapper style
+###### simplified CommonJS wrapper style
 
 ```js
 var define = typeof define === "function" && define.amd ? define : function define(factory) { factory(require, exports, module) }
 ```
+
+###### both?
+
+If you have a mix of the AMD style and the CommonJS style or are using any of the more advanced AMD loader features, you may need to call upon an actual Node implementation of an AMD loader, such as [AMDefine](https://www.npmjs.com/package/amdefine):
+```js
+var define = typeof define === "function" && define.amd ? define : require("amdefine")(module, require)
+```
+
+#### outside the test files
+
+If you don't want to put the shims at the top of every test file, or if you need to support AMD modules in your actual code as well as the tests, you may need to `--require` an AMD loader such as `--require [amdefine/intercept](https://github.com/jrburke/amdefine/#amdefineintercept)`.
 
 ### example
 
 See [the example provided in the repository](example) for a more complete picture. Note that you can run the same tests from the example using Mocha's CLI from the base of this repository ([the repository's mocha.opts file](test/mocha.opts) configures it to find the example's tests and use the exports interface).
 
 ## ToDo
+- Update example/test according to documentation updates.
 - Lint/hint/style-fix?
 - Consider making the example/test be omitted from npm use of this lib as a dependency.
 - Set up actual testing -- it would have to be a bit meta, use the plugin to load some tests and then somehow check that the tests were loaded and/or run.

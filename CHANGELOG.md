@@ -8,6 +8,9 @@ This changelog is inspired by [Keep A Changelog](http://keepachangelog.com/).
 - `[examples]` Use posixy path separator in test.
 - `[examples]` Comment the assert browser shim.
 
+### Changed
+- `[documentation]` Discuss full Node loaders.
+
 ## [1.1.0][]
 ### Fixed
 - Stop leaking globalMochaAvailable function in non-strict mode.
