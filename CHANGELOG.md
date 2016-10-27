@@ -7,6 +7,8 @@ This changelog is inspired by [Keep A Changelog](http://keepachangelog.com/).
 ### Fixed
 - `[examples]` Use posixy path separator in test.
 - `[examples]` Comment the assert browser shim.
+- `[documentation]` Mention old IE bug and workaround.
+- `[examples]` Add examples of old IE bug workaround.
 
 ### Changed
 - `[documentation]` Discuss full Node loaders (e.g. AMDefine).

@@ -51,6 +51,10 @@ If you have a mix of the AMD style and the CommonJS style or are using any of th
 var define = typeof define === "function" && define.amd ? define : require("amdefine")(module, require)
 ```
 
+##### Older Internet Explorer
+
+If your tests need to work in Internet Explorer 8 or older, and you're using one of the two simple shims above, then you'll need to use just `function` instead of `function define`. Apparently older versions of IE hoist named functions even when they're in an expression rather than a statement? This isn't really likely to affect anything in practice -- basically, the `define` function won't be named if for some reason your code is looking at that.
+
 #### outside the test files
 
 If you don't want to put the shims at the top of every test file, or if you need to support AMD modules in your actual code as well as the tests, you may need to `--require` an AMD loader such as `--require [amdefine/intercept](https://github.com/jrburke/amdefine/#amdefineintercept)`.
