@@ -12,5 +12,4 @@ exports["Suite defined by AMD's simple CommonJS wrapper"] = {
 }
 
 
-
 })
