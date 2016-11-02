@@ -9,6 +9,7 @@ This changelog is inspired by [Keep A Changelog](http://keepachangelog.com/).
 - `[examples]` Comment the assert browser shim.
 - `[documentation]` Mention old IE bug and workaround.
 - `[examples]` Add examples of old IE bug workaround.
+- `[documentation]` Clarify to-do list in readme.
 
 ### Added
 - `[documentation]` Discuss full Node loaders (e.g. AMDefine).
