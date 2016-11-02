@@ -1,6 +1,6 @@
 {
   "name": "mocha-exports-amd",
-  "version": "1.1.1-in-progress.18",
+  "version": "1.1.1-in-progress.19",
   "dependencies": {
     "accepts": {
       "version": "1.1.4",
@@ -652,6 +652,12 @@
         }
       }
     },
+    "karma-firefox-launcher": {
+      "version": "1.0.0",
+      "from": "karma-firefox-launcher@latest",
+      "resolved": "https://registry.npmjs.org/karma-firefox-launcher/-/karma-firefox-launcher-1.0.0.tgz",
+      "dev": true
+    },
     "karma-mocha": {
       "version": "1.2.0",
       "from": "karma-mocha@latest",
@@ -663,6 +669,20 @@
       "from": "karma-requirejs@latest",
       "resolved": "https://registry.npmjs.org/karma-requirejs/-/karma-requirejs-1.1.0.tgz",
       "dev": true
+    },
+    "karma-spec-reporter": {
+      "version": "0.0.26",
+      "from": "karma-spec-reporter@latest",
+      "resolved": "https://registry.npmjs.org/karma-spec-reporter/-/karma-spec-reporter-0.0.26.tgz",
+      "dev": true,
+      "dependencies": {
+        "colors": {
+          "version": "0.6.2",
+          "from": "colors@>=0.6.0 <0.7.0",
+          "resolved": "https://registry.npmjs.org/colors/-/colors-0.6.2.tgz",
+          "dev": true
+        }
+      }
     },
     "kind-of": {
       "version": "3.0.4",

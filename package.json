@@ -1,6 +1,6 @@
 {
   "name": "mocha-exports-amd",
-  "version": "1.1.1-in-progress.18",
+  "version": "1.1.1-in-progress.19",
   "description": "AMD loader plugin to run Mocha tests with module exports interface in browser",
   "main": "mochaExport.js",
   "directories": {
@@ -13,18 +13,23 @@
   "devDependencies": {
     "amdefine": "1.0.0",
     "karma": "1.3.0",
+    "karma-firefox-launcher": "1.0.0",
     "karma-mocha": "1.2.0",
     "karma-requirejs": "1.1.0",
+    "karma-spec-reporter": "0.0.26",
     "mocha": "2.5.3",
     "requirejs": "2.2.0",
     "requirejs-domready": "2.0.3"
   },
   "scripts": {
+    "example": "npm run example-cli && npm run example-browser",
+    "example-browser": "karma start",
+    "example-cli": "npm run example-shim && npm run example-amdefine-intercept",
+    "example-shim": "mocha example/*.test.js example/*.test.ie8.js",
+    "example-amdefine-intercept": "mocha --require amdefine/intercept example/*.test.noShim.js",
     "test": "npm run test-cli && npm run test-browser",
-    "test-browser": "karma start",
-    "test-cli": "npm run test-shim && npm run test-amdefine-intercept",
-    "test-shim": "mocha example/*.test.js example/*.test.ie8.js",
-    "test-amdefine-intercept": "mocha --require amdefine/intercept example/*.test.noShim.js"
+    "test-cli": "mocha test/cliCompatibility.js",
+    "test-browser": "karma start test/karma.conf.js"
   },
   "repository": {
     "type": "git",

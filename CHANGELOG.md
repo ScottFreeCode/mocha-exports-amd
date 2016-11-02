@@ -20,6 +20,8 @@ This changelog is inspired by [Keep A Changelog](http://keepachangelog.com/).
   - karma
   - karma-mocha
   - karma-requirejs
+  - karma-spec-reporter
+  - karma-firefox-launcher
 
 ## [1.1.0][]
 ### Fixed
