@@ -5,7 +5,7 @@ define(function(require,exports,module) {"use strict"
 
 var assert = require("assert")
 
-exports["Suite defined by AMD's simple CommonJS wrapper"] = {
+exports["Suite defined by AMD's simple CommonJS wrapper (IE8-compatible shim)"] = {
   "Simple test": function() {
     assert(true)
   }

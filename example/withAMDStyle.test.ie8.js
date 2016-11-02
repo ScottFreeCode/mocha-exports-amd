@@ -4,7 +4,7 @@ define(["assert"],function(assert) {"use strict"
 
 
 return {
-	"Suite defined by AMD": {
+	"Suite defined by AMD (IE8-compatible shim)": {
 		"Simple test": function() {
 			assert(true)
 		}
