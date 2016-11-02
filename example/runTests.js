@@ -27,6 +27,13 @@ require.config({
 require(["mocha",
          "mochaExport!withAMDStyle.test",
          "mochaExport!withCommonJSStyle.test",
+         // these tests should be identical in effect;
+         // the style or absence of shim should not affect
+         // usage with an actual browser AMD loader
+         "mochaExport!withAMDStyle.amdefine.test",
+         "mochaExport!withCommonJSStyle.amdefine.test",
+         "mochaExport!withAMDStyle.test.noShim",
+         "mochaExport!withCommonJSStyle.test.noShim",
          "domReady!"],
         function(mocha) {
   if (!mocha) { mocha = self.mocha } // In case shim config were not set up.
