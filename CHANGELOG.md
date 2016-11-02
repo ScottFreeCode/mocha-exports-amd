@@ -5,11 +5,11 @@ This changelog is inspired by [Keep A Changelog](http://keepachangelog.com/).
 
 ## [Unreleased][]
 ### Fixed
-- `[examples]` Use posixy path separator in test.
-- `[examples]` Comment the assert browser shim.
 - `[documentation]` Mention old IE bug and workaround.
 - `[examples]` Add examples of old IE bug workaround.
+- `[examples]` Comment the assert browser shim.
 - `[documentation]` Clarify to-do list in readme.
+- `[examples]` Use posixy path separator in test.
 
 ### Added
 - `[documentation]` Discuss full Node loaders (e.g. AMDefine).
