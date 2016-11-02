@@ -61,7 +61,7 @@ If you don't want to put the shims at the top of every test file, or if you need
 
 ### example
 
-See [the example provided in the repository](example) for a more complete picture. Note that you can run the same tests from the example using Mocha's CLI from the base of this repository by calling `npm test` ([the repository's mocha.opts file](test/mocha.opts) configures it to use the exports interface and the npm test scripts specify the different types of examples' tests).
+See [the example provided in the repository](example) for a more complete picture. Note that you can run the same tests from the example using Mocha's CLI and Karma (automated browser testing) from the base of this repository by calling `npm test` or (to skip Karma) `npm run test-cli` ([the repository's mocha.opts file](test/mocha.opts) configures it to use the exports interface and the npm test scripts specify the different types of examples' tests) -- for the Karma portion of the example, however, you'll need to install your preferred browser launcher(s) and run `npm test -- -- --browsers <your browser(s) here>`.
 
 ## ToDo
 - Lint/hint/style-fix?

@@ -13,8 +13,12 @@ This changelog is inspired by [Keep A Changelog](http://keepachangelog.com/).
 ### Added
 - `[documentation]` Discuss full Node loaders (e.g. AMDefine).
 - `[examples]` Test AMDefine.
+- `[examples]` Test with Karma.
 - `[metadata]` dev dependencies:
-  - AMDefine
+  - amdefine
+  - karma
+  - karma-mocha
+  - karma-requirejs
 
 ## [1.1.0][]
 ### Fixed
