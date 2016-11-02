@@ -10,11 +10,9 @@ This changelog is inspired by [Keep A Changelog](http://keepachangelog.com/).
 - `[documentation]` Mention old IE bug and workaround.
 - `[examples]` Add examples of old IE bug workaround.
 
-### Changed
+### Added
 - `[documentation]` Discuss full Node loaders (e.g. AMDefine).
 - `[examples]` Test AMDefine.
-
-### Added
 - `[metadata]` dev dependencies:
   - AMDefine
 
