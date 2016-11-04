@@ -23,6 +23,11 @@ This changelog is inspired by [Keep A Changelog](http://keepachangelog.com/).
   - karma-spec-reporter
   - karma-firefox-launcher
 
+### Changed
+- `[metadata]` Updated dependencies:
+  - mocha
+  - requirejs
+
 ## [1.1.0][]
 ### Fixed
 - Stop leaking globalMochaAvailable function in non-strict mode.
