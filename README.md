@@ -61,7 +61,7 @@ If you don't want to put the shims at the top of every test file, or if you need
 
 ### example
 
-See [the example provided in the repository](example) for a more complete picture. Note that you can run the same tests from the example using Mocha's CLI and Karma (automated browser testing) from the base of this repository by calling `npm run example` or (to skip Karma) `npm run example-cli` ([the repository's mocha.opts file](test/mocha.opts) configures it to use the exports interface and the npm scripts specify the different types of examples' tests) -- for the Karma portion of the example, if you don't want to use Firefox, you'll need to install your preferred browser launcher(s) and run `npm run example -- -- --browsers <your browser(s) here>`.
+See [the example provided in the repository](example) for a more complete picture. Note that, with the dev dependencies installed, you can run the same tests from the example using Mocha's CLI and Karma (automated browser testing) from the base of this repository by calling `npm run example` or (to skip Karma) `npm run example-cli` ([the repository's mocha.opts file](test/mocha.opts) configures it to use the exports interface and the npm scripts specify the different types of examples' tests) -- for the Karma portion of the example, if you don't want to use Firefox, you'll need to install your preferred browser launcher(s) and run `npm run example -- -- --browsers <your browser(s) here>` or `npm run example-browser -- --browsers <your browser(s) here>`.
 
 ## ToDo
 - Lint/hint/style-fix?

@@ -1,6 +1,6 @@
 {
   "name": "mocha-exports-amd",
-  "version": "1.1.1-in-progress.22",
+  "version": "1.1.1-in-progress.23",
   "dependencies": {
     "accepts": {
       "version": "1.1.4",
