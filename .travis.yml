@@ -1,0 +1,25 @@
+language: node_js
+
+script: $COMMAND
+
+matrix:
+  include:
+    node_js: "7"
+    env: COMMAND="npm test"
+
+env: COMMAND="npm run test-cli"
+
+node_js:
+  - "6"
+  - "5"
+  - "4"
+  - "iojs"
+  - "0.12"
+  - "0.11"
+  - "0.10"
+
+# for Firefox 
+before_script:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - sleep 3 # give xvfb some time to start
