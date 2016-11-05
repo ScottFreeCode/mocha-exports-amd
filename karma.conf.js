@@ -9,6 +9,11 @@ module.exports = function(config) {
     autoWatch: false,
     singleRun: true,
     browsers: ["Firefox"],
-    reporters: ["spec"]
+    reporters: ["spec"],
+    client: {
+      mocha: {
+        reporter: "html"
+      }
+    }
   })
 }
