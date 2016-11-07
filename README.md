@@ -34,6 +34,10 @@ The plugin automatically configures Mocha to use the exports interface so you do
 
 The plugin will use Mocha through the global `mocha` object if it is already loaded. If it is not already loaded, the plugin will attempt to load `mocha` through AMD so that `mocha` is available for the plugin to use. If it attempts to load Mocha through AMD, it will prefer the object resolved as an AMD module (e.g. from shim config) if any, and fall back again on the global `mocha` object otherwise -- in other words, you can leave out the shim config if you prefer as long as your AMD loader is able to find Mocha in the first place... or you can just load Mocha synchronously (the same as when using without AMD) and it will already be available.
 
+#### location configuration
+
+Note that, as with any AMD module, you may have to point your AMD loader to the package installation locations (e.g. the `node_modules` folders if you've installed through `npm`). This can be done with [`packages` config](http://www.requirejs.org/docs/api.html#packages). Normally it would also be possible to use something such as a combination of [adapt-pkg-main](https://www.npmjs.org/package/adapt-pkg-main) and setting [`baseUrl`](http://www.requirejs.org/docs/api.html#config-baseUrl) to `node_modules` (and using [`paths`](http://www.requirejs.org/docs/api.html#config-paths) to refer your code back to the local application), but for some reason I have not gotten relative paths to the test files to work with the plugin (RequireJS seems to turn them into non-relative paths before they even hit the plugin's code, which makes it hard to get around having `baseUrl` set to anything but the test directory). Feel free to work off the code in the [example](example/runTests.js). Experiment and see what works for you.
+
 ### compatibility with Node.js
 
 Unless your code is only meant to be used in-browser and you're comfortable relying on browser testing only, you'll still need to keep the test files compatible with Mocha's regular exports interface so you can run it on the commandline. Fortunately, it's easier to get AMD modules working in Node than Node modules in the browser.
