@@ -77,6 +77,7 @@ See [the example provided in the repository](example) for a more complete pictur
 - Lint/hint/style-fix?
 - Consider making the example/test be omitted from production use of this lib as an npm dependency.
 - Unit testing? (Are there standard RequireJS loader plugin tests we can call upon?)
+- Figure out whether this is needed, and if so whether it works, with various options for browser-bundling CommonJS/Node modules (in the actual code for the project being tested).
 
 ## License
 

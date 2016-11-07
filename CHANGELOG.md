@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `[documentation]` Mention old IE bug and workaround.
 - `[examples]` Add examples of old IE bug workaround.
 - `[examples]` Comment the assert browser shim.
-- `[documentation]` Clarify to-do list in readme.
+- `[documentation]` Clarify/update to-do list in readme.
 - `[examples]` Use posixy path separator in test.
 
 ### Changed
