@@ -6,6 +6,14 @@ This is an AMD loader plugin for running [Mocha](https://github.com/mochajs/moch
 
 Mocha's exports interface does not work in the browser directly in its raw Node.js module form due to the design of the CommonJS module system Node.js builds upon. However, this plugin plus an AMD loader (such as [RequireJS](http://requirejs.org/), although there are others) makes it fairly easy to write tests using the exports interface that will run in the browser instead of or in addition to Node.js. Thanks to the design of AMD modules, no additional tooling, conversion or bundling steps nor even a server is necessary (unless the tests themselves require a server for something such as XMLHttpRequests). Just write your test modules as compatible with the AMD format (it only takes one or two extra lines per module to set this up), and write a test page that calls on the AMD loader to get the tests through this plugin, and then you can simply open it from your filesystem the same as any other Mocha test interface!
 
+## Installation
+
+This package is available on `npm`. It should be installed as the same sort of dependency that Mocha is. I recommend local dev dependencies, since you may need to rely on a particular version of Mocha in, say, continuous integration.
+
+```sh
+npm i --save-dev mocha-exports-amd
+```
+
 ## Usage
 
 First off, write your exports-interface Mocha tests as [AMD modules](https://github.com/amdjs/amdjs-api); if you've already written them as CommonJS modules, wrap them using [the simplified CommonJS interface](http://requirejs.org/docs/commonjs.html#manualconversion).

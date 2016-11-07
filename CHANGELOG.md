@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `[examples]` Test with Karma.
 - `[documentation]` Discuss full Node loaders (e.g. AMDefine).
 - `[examples]` Test AMDefine.
+- `[documentation]` Readme comments on installation.
 - `[metadata]` dev dependencies:
   - amdefine@1.0.1
   - karma@1.3.0

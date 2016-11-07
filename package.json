@@ -1,6 +1,6 @@
 {
   "name": "mocha-exports-amd",
-  "version": "1.1.1-in-progress.25",
+  "version": "1.1.1-in-progress.26",
   "description": "AMD loader plugin to run Mocha tests with module exports interface in browser",
   "main": "mochaExport.js",
   "directories": {
