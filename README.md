@@ -22,7 +22,7 @@ Note: [RequireJS's site](http://requirejs.org/) has a lot of good info on this, 
 
 ### in browser
 
-Have your page (or the test-running module it loads) require the test modules prefixed with "mochaExport!" before running Mocha:
+Have your page (or the test-running module it -- or a browser test harness such as Karma -- loads) require the test modules prefixed with "mochaExport!" before running Mocha:
 ```js
 require(["mochaExport!myTest1","mochaExport!myTest2"], function() { mocha.run() })
 
